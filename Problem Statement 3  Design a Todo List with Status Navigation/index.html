@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Status Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>To-Do List</h1>
+    </div>
+    <div class="board">
+        <div class="column" id="backlog">
+            <h2>Backlog</h2>
+            <ul class="task-list">
+                <li class="task-item">
+                    task 1
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+                <li class="task-item">
+                    task 2
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+                <li class="task-item">
+                    task 3
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column" id="todo">
+            <h2>To Do</h2>
+            <ul class="task-list">
+                <li class="task-item">
+                    task 4
+                    <button class="nav-btn prev-btn">←</button>
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+                <li class="task-item">
+                    task 5
+                    <button class="nav-btn prev-btn">←</button>
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+                <li class="task-item">
+                    task 6
+                    <button class="nav-btn prev-btn">←</button>
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column" id="ongoing">
+            <h2>Ongoing</h2>
+            <ul class="task-list">
+                <li class="task-item">
+                    task 7
+                    <button class="nav-btn prev-btn">←</button>
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+                <li class="task-item">
+                    task 8
+                    <button class="nav-btn prev-btn">←</button>
+                    <button class="nav-btn next-btn">→</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column" id="done">
+            <h2>Done</h2>
+            <ul class="task-list">
+                <li class="task-item">
+                    task 9
+                    <button class="nav-btn prev-btn">←</button>
+                </li>
+                <li class="task-item">
+                    task 10
+                    <button class="nav-btn prev-btn">←</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

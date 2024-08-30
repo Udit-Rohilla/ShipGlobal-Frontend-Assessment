@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel with Fallback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="heading">
+        Image Carousel with Fallback Image
+    </h1>
+    <div class="carousel">
+        <button class="carousel-control prev" onclick="prevImage()">&#10094;</button>
+        <div class="carousel-images">
+            <img src="image1.avif">
+            <img src="image2.avif">
+            <img src="image3.jpg">
+        </div>
+        <button class="carousel-control next" onclick="nextImage()">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="current" onclick="currentImage(1)"></span>
+            <span class="current" onclick="currentImage(2)"></span>
+            <span class="current" onclick="currentImage(3)"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
